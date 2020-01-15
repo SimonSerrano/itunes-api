@@ -9,7 +9,7 @@ export class ItunesApiRequest {
 
     search(search) {
         let params='search?term='+search.replace(' ', '+');
-        fetch(this.API + params).then(res => console.log(res));
+        return fetch(this.API + params);
     }
 
 }
