@@ -13,8 +13,8 @@ export class RequestParser {
             for(let i=0; i<results.length; i++) {
                 console.log(results[i], this.kind);
                 if(results[i].kind === this.kind) {
-                    const {artistName, trackName, previewUrl, artworkUrl30} = results[i];
-                    result.push({artistName, trackName, previewUrl, artworkUrl30});
+                    const {artistName, trackName, previewUrl, artworkUrl100} = results[i];
+                    result.push({artistName, trackName, previewUrl, artworkUrl100});
                 }
             }
             resolve(result);
